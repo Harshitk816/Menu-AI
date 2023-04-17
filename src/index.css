@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background: url("background.jpg")  no-repeat fixed ;
+    background-size: cover;
+   
+}
+.cards{
+    display:list-item;
+    display:inline-block;
+   
+}
+.menuHeading{
+    width: 570px;
+    border: 1px solid black;
+    background-color: #ffdc89be;
+}
+.cartHeading{
+    width: 505px;
+    border: 1px solid black;
+    background-color: #ffdc89be;
+   
+
+}
+.listItems{
+    border: 1px solid black;
 }
