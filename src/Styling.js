@@ -2,12 +2,14 @@ import React from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Image } from "react-bootstrap";
 
 const Header = ()=>{
     return (
         <div>
        
         <Navbar expand='md' style={{ position :"relative",zIndex:"1",paddingRight:"0", backgroundColor:'darkred'}} variant="dark"  >
+          
         <Navbar.Brand style={{ fontSize:"3rem"}} className=" logo ms-5" href="">ZigZag Cafe</Navbar.Brand>
         <Navbar.Toggle  aria-controls="navbarScroll" className='me-2' />
         <Navbar.Collapse className='me-auto' id="navbarScroll">

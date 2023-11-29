@@ -12,7 +12,7 @@ var Content=()=>{
   
   useEffect(()=>{
     alanBtn({
-      key: '8c794a160f52423e7dd5325c20d7270b2e956eca572e1d8b807a3e2338fdd0dc/stage',
+      key: '77c8bc8889844d4018be7d00e281c88c2e956eca572e1d8b807a3e2338fdd0dc/stage',
       onCommand: (commandData) => {
         if(commandData.command==='getMenu'){
           setMenuItems(commandData.data)
@@ -52,17 +52,20 @@ var Content=()=>{
    </div>
    <div className="right-div"style={{height:"auto", width:"100%"}}>
    <h3 id='cart' className=' cartHeading font-extrabold text-xl  text-l w-auto h-8 text-center'>CART</h3>
-   {cart.map((cartItem)=>(
-     <Card className='cards m-3 text-center' style={{ width: '140px', backgroundColor:'burlywood'}}>
-     <Card.Img style={{height:'100px', width:'150px'}} variant="top" src={cartItem.image} />
-     <Card.Body>
-       <Card.Title style={{color:'brown',fontWeight:'bold'}}>{cartItem.name}</Card.Title>
-       <Card.Text>
-       {cartItem.price} - {cartItem.category}
-       </Card.Text>
-      
-     </Card.Body>
-   </Card>
+   
+   {cart.map((cartItem)=>( 
+    <Card className='cards m-3 text-center' style={{ width: '140px', backgroundColor:'burlywood'}}>
+    <Card.Img style={{height:'100px', width:'150px'}} variant="top" src={cartItem.image} />
+    <Card.Body>
+      <Card.Title style={{color:'brown',fontWeight:'bold'}}>{cartItem.name}</Card.Title>
+      <Card.Text>
+      {cartItem.price} - {cartItem.category}
+      </Card.Text>
+     
+    </Card.Body>
+  </Card>
+   
+     
    ))}
    </div>
           
